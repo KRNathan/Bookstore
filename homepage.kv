@@ -1,0 +1,39 @@
+<HomePage>
+	MDBoxLayout:
+		orientation: 'vertical'
+		
+		MDBoxLayout:
+			padding: dp(10)
+			adaptive_height: True
+			
+			MDLabel:
+				text: 'GINITo bookstore'
+				bold: True
+				font_size: dp(22)
+				pos_hint: {'center_y':.5}
+			MDIconButton:
+				id: menu_trigger
+				icon: 'dots-vertical'
+				on_release: app.open_menu()
+				
+		MDBoxLayout:
+			MDScrollView:
+				bar_width: 0
+				
+				MDBoxLayout:
+					spacing: dp(2)
+					padding: dp(5)
+					adaptive_height: True
+					orientation: 'vertical'
+					id: books
+		MDBoxLayout:
+			adaptive_height: True
+			
+			padding: dp(10)
+			
+			MDIconButton:
+				icon: 'home'
+			MDWidget:
+			MDIconButton:
+				icon: 'magnify'
+				on_release: app.root.current = 'searchpage'

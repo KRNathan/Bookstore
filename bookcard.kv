@@ -1,0 +1,56 @@
+<BookCard>:
+    pos_hint: {'center_y': .5, 'center_x': .5}
+    size_hint: .96, None
+    height: dp(250)
+    #md_bg_color: 1, 1, 1, 1
+    #elevation: 0.5
+    radius: 2, 2
+    padding: dp(5)
+    on_ripple_behavior: True
+    on_release: app.create_bookinfo_card(book_title.text)
+
+    MDRelativeLayout:
+        #md_bg_color: 1, 1, 1, 1
+
+        AngularRectangle:
+            #md_bg_color: 1, 1, 1, 1
+            size_hint: .95, .6
+            pos_hint: {'center_y': .7, 'center_x': .5}
+            elevation: 1
+
+        AngularRectangle:
+            #md_bg_color: 1, 1, 1, 1
+            size_hint: .93, .585
+            pos_hint: {'center_y': .7, 'center_x': .5}
+            elevation: 1
+
+        FitImage:
+            source: root.cover_photo
+            size_hint: .93, .585
+            pos_hint: {'center_y': .7, 'center_x': .5}
+            radius: dp(12), dp(12)
+
+        AngularRectangle:
+            size_hint: .22, .22
+            radius: dp(45), dp(45)
+            pos_hint: {'center_y': .88, 'center_x': .85}
+            md_bg_color: 0, 0, 0, 0
+
+            FitImage:
+                source: 'free.png'
+
+        MDLabel:
+            id: book_title
+            bold: True
+            text: root.title
+            pos_hint: {'center_y': .25, 'center_x': .5}
+            halign: 'center'
+
+        MDLabel:
+            text: root.downloads+' downloads'
+            pos_hint: {'center_y': .1, 'center_x': .5}
+            halign: 'left'
+            padding: dp(7.5)
+            theme_text_color: 'Hint'
+
+<AngularRectangle@MDCard>

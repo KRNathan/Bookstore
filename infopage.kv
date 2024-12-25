@@ -1,0 +1,23 @@
+<InformationPage>:
+	MDBoxLayout:
+		orientation: 'vertical'
+		MDBoxLayout:
+			adaptive_height: True
+			MDIconButton:
+				icon: 'arrow-left'
+				pos_hint: {'left':1, 'top':1}
+				padding: dp(5)
+				on_release:
+					app.root.transition.direction = 'right'
+					app.root.current = 'homepage'
+	
+			MDLabel:
+				text: 'book information'
+				halign: 'center'
+				pos_hint: {'center_x':.5,'top':1}
+				
+			MDWidget:
+				
+		MDBoxLayout:
+			MDRelativeLayout:			
+				id: book_info_center

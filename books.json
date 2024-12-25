@@ -1,0 +1,32 @@
+{
+  "book1": {
+    "title": "C++ Programming for Beginners",
+    "cover": "cover0.png",
+    "file_size": "12 MBs",
+    "downloads": 1230
+  },
+  "book2": {
+    "title": "Python Programming for Beginners",
+    "cover": "cover1.png",
+    "file_size": "2 MBs",
+    "downloads": 345
+  },
+  "book3": {
+    "title": "Introduction To Ethical Hacking by Albert Mendel",
+    "cover": "cover.png",
+    "file_size": "76MBs",
+    "downloads": 23
+  },
+  "book4": {
+    "title": "Game Development with Pygame by Will McGaug",
+    "cover": "cover2.png",
+    "file_size": "1 MBs",
+    "downloads": 79
+  },
+  "book5": {
+    "title": "C# For Beginners by Nathan Natt",
+    "cover": "cover3.png",
+    "file_size": "45 MBs",
+    "downloads": 200
+  }
+}

@@ -38,8 +38,8 @@ jobs:
           pip install buildozer cython==0.29.33
 
       # Step 4: Initialize Buildozer
-      - name: Initialize Buildozer
-        run: |
+      #- name: Initialize Buildozer
+        #run: |
           buildozer init
 
       # Step 5: Build APK
